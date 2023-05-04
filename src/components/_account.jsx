@@ -1,22 +1,22 @@
 import React from 'react'
 import { useSession, getSession } from 'next-auth/react'
-import Dashboard from '../../dashboard'
-import Login from '../../login'
+import Dashboard from '../pages/dashboard'
+import Login from '../pages/login'
 
-export const Account = () => {
+// export const Account = () => {
 
-    const { data: session, status } = useSession({ required: true })
+//     const { data: session, status } = useSession({ required: true })
 
-    if (status === 'authenticated') {
-        return (
-            <Dashboard />
-        )
-    } else {
-        return (
-            <Login />
-        )
-    }
-}
+//     if (status === 'authenticated') {
+//         return (
+//             <Dashboard />
+//         )
+//     } else {
+//         return (
+//             <Login />
+//         )
+//     }
+// }
 
 //Server Side
 export const getServerSideProps = async (context) => {
