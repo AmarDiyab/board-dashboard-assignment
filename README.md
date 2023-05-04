@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Deployed Link
 
-http://openinapp-assignment-amardiyab.netlify.app
+http://openinapp-assignment-amardiyab.vercel.app
 
 ## Getting Started
 
