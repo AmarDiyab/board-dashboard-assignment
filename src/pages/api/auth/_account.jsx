@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSession getSession } from 'next-auth/react'
+import { useSession, getSession } from 'next-auth/react'
 import Dashboard from '../../dashboard'
 import Login from '../../login'
 
