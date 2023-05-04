@@ -1,0 +1,77 @@
+.loginWrapper {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    @apply grid h-screen w-screen
+}
+
+.formWrapper {
+    @apply flex flex-col col-span-3 justify-center items-center bg-[#F5F5F5]
+}
+
+.authWrapper {
+    @apply flex pt-4 w-[100%]
+}
+
+.topSection {
+    @apply min-w-[50%]
+}
+
+.google {
+    @apply flex bg-white items-center px-4 mr-2 rounded-lg cursor-pointer
+}
+
+.apple {
+    @apply flex bg-white items-center px-4 rounded-lg cursor-pointer
+}
+
+.loginDetails {
+    @apply flex flex-col bg-white items-center min-w-[50%] rounded-2xl mt-8 py-10
+}
+
+@media screen and (max-width:1024px) {
+
+    .loginWrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .formWrapper {
+        @apply py-8
+    }
+
+    .authWrapper {
+        @apply flex-col
+    }
+
+    .google {
+        @apply flex items-center my-2 mx-0
+    }
+
+    .apple {
+        @apply flex items-center my-2 mx-0
+    }
+
+    .loginDetails {
+        @apply min-w-[80%]
+    }
+}
+
+@media screen and (max-width:769px) {
+
+    .formWrapper {
+        @apply py-8
+    }
+
+    .authWrapper {
+        @apply flex-col
+    }
+
+    .topSection {
+        @apply w-[80%]
+    }
+
+    .loginDetails {
+        @apply min-w-[80%]
+    }
+}
+

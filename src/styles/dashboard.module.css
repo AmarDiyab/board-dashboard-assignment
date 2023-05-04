@@ -1,0 +1,116 @@
+.dashContainer {
+    @apply h-screen w-screen grid grid-cols-5 bg-[#F5F5F5] overflow-hidden gap-x-6 px-[3rem] py-6 box-border grid-rows-1
+}
+
+.navbar {
+    @apply h-full w-full flex flex-col bg-black box-border justify-between rounded-[1.8rem] px-4
+}
+
+.logo {
+    @apply text-left font-bold text-white text-5xl px-8 py-[3rem]
+}
+
+.links {
+    @apply text-left text-white text-lg font-medium mb-auto px-8 list-none
+}
+
+.externalLinks {
+    @apply py-8
+}
+
+
+.topSection {
+    @apply grid grid-rows-1 grid-cols-4 row-span-1 gap-x-4
+}
+
+
+.pieChart {
+    @apply grid grid-rows-1 grid-cols-2 relative bg-white rounded-2xl box-border
+}
+
+.topProducts {
+    @apply absolute text-left top-1 left-1 text-2xl font-semibold px-8 py-4
+}
+
+.schedule {
+    @apply relative flex-col bg-white rounded-2xl
+}
+
+
+@media screen and (max-width:1024px) and (min-width:769px) {
+
+    .dashContainer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        @apply py-8;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .externalLinks {
+        display: none;
+    }
+
+
+    .topSection {
+        @apply grid-rows-2 grid-cols-2 gap-4 w-[80vw] mx-auto;
+    }
+
+
+    .topProducts {
+        @apply text-base;
+    }
+
+
+}
+
+@media screen and (max-width:769px) {
+
+    .dashContainer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        @apply py-8;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .externalLinks {
+        display: none;
+    }
+
+
+    .topSection {
+        @apply grid-rows-2 grid-cols-2 gap-4 w-[80vw] mt-12;
+    }
+
+    .pieChart {
+        display: none;
+    }
+
+    .schedule {
+        display: none;
+    }
+
+}
