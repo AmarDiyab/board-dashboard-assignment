@@ -1,7 +1,6 @@
-import React from 'react'
 import { getSession } from 'next-auth/react'
 
-export const getServerSideProps = async (context) => {
+const getServerSideProps = async (context) => {
     const session = await getSession(context)
     
     if (!session) {
@@ -12,7 +11,8 @@ export const getServerSideProps = async (context) => {
         }
     }
     return {
-        props: {session},
-
+        props: {session}
     }
 }
+
+export default getServerSideProps;
